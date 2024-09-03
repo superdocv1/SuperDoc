@@ -1,0 +1,52 @@
+.popup-close{
+    background-size:12px;
+}
+
+.theme-table .table .sticky-top{
+    background-color:#EFEFFA;
+}
+
+.theme-table{
+    border-radius:6px;
+    border:1px solid #E1E5E9;
+}
+
+.theme-table .table thead th{
+    padding:16px;
+}
+
+.theme-table .table tbody td{
+    padding:16px;
+    font-family: 'latosemibold' !important;
+    color:#3d3d3d;
+}
+
+.theme-table .table tr{
+    border-bottom: 1px solid #ededed;
+}
+
+.comments-data{
+    width: 170px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.popup-icon{
+    top:20px;
+}
+
+.custom-popup-width{
+    width:700px;
+}
+
+.table-y-scroll{
+    height:289px;
+    overflow-y: auto;
+}
+
+.custom-textarea{
+    resize: none;
+    height:114px;
+}

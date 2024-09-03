@@ -1,0 +1,41 @@
+.custom-dropdown-toggle{
+    color: #334155;
+    font-size: 14px;
+}
+
+.dropdown-toggle.custom-dropdown-toggle::after{
+    content: '';
+    background-image: url(../images/dropdown-arrow.svg);
+    height: 10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    border-top: 0 !important;
+    background-position: bottom;
+
+}
+
+.text-editor-text{
+    width:14px;
+    height:14px;
+}
+
+.grey-v1{
+    color: #334155;
+}
+
+.italic-icon{
+    height:20px;
+}
+
+.drag-icon,.add-icon{
+    width:16px;
+}
+
+.right-arrow{
+    height:15px;
+}
+
+.left-arrow{
+    height:13px;
+}
+

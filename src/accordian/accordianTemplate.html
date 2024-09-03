@@ -1,0 +1,25 @@
+<div class="accordion-item my-3">
+    <h2 class="accordion-header">
+        <button class="accordion-button custom-accordian" type="button" data-bs-toggle="collapse" aria-expanded="" aria-controls="">
+            <div class="d-flex flex-column">
+                <p class="font-10 font-medium black-v6 mb-1">{{TemplateTopic}}</p>
+                <p class="mb-0 font-8 font-medium gray-v5">{{TemplateName}}</p>
+            </div>
+        </button>
+    </h2>
+    <div id="" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <div>
+                <p class="font-11 font-regular black-v6">{{TemplateContent}}</p>
+            </div>
+            <div class="d-flex gap-3">
+                <button class="white-btn font-10 font-medium color-black d-flex align-items-center gap-2 preview-btn">
+                    <img src="${PreviewIcon}" alt="prev-icon" class="w-18">Content Preview
+                </button>
+                <button class="white-btn font-10 font-medium color-black d-flex align-items-center gap-2 insert-btn">
+                    <img src="${ContentIcon}" alt="prev-icon" class="w-18">Insert Content
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

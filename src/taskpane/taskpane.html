@@ -1,0 +1,104 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superdoc add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/commontheme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <style>
+        body{overflow:overlay}::-webkit-scrollbar{width:4px; height: 4px; display:block}::-webkit-scrollbar-button{display:none}::-webkit-scrollbar-track{border-radius:5px;background-color:#00000000}::-webkit-scrollbar-track-piece{background-color:#00000000}::-webkit-scrollbar-thumb{background:#9f9f9f;opacity:.2;border-radius:5px}
+</style>
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    
+    <body class="ms-font-m ms-welcome ms-Fabric">
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-md-4">
+                    <div class="table-container p-4 height-95vh">
+                        <div class="d-flex justify-content-end">
+                            <!-- <a href=""><img src="images/right-tab-close.svg" alt="close-icon"></a> -->
+                        </div>
+                        <div class="d-flex justify-content-center ">
+                            <ul class="nav nav-tabs tab-border-container gap-1" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active right-tab" id="Content-Finder-tab" data-bs-toggle="tab" data-bs-target="#Content-Finder" type="button" role="tab" aria-controls="Content-Finder" aria-selected="true">Content Finder</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link right-tab" id="Content-Enhancer-tab" data-bs-toggle="tab" data-bs-target="#Content-Enhancer" type="button" role="tab" aria-controls="Content-Enhancer" aria-selected="false">Content Enhancer</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Content-Finder" role="tabpanel" aria-labelledby="Content-Finder-tab">
+                                <div class="mt-4">
+                                    <div class="input-group input-search custom-form p-0">
+                                        <button class="btn border-0 search-input-btn d-flex align-items-center" type="button">
+                                            <img src="images/search-icon.png" class="w-18" alt="search">
+                                        </button>
+                                        <input type="search" class="border-0 form-control font-14 font-regular custom-search" placeholder="Enter the text to search">
+                                    </div>
+                                    <!-- Add your accordion or content list here -->
+                                    <div id="accordionExample" class="accordion accordian-height my-4">
+                                        <!-- Accordion items will be dynamically added here -->    <!-- accordionItemTemplate.html -->
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Content-Enhancer" role="tabpanel" aria-labelledby="Content-Enhancer-tab">
+                                <div class="content-height">
+                                    <!-- Prompt container -->
+                                    <div class="my-4">
+                                        <p class="font-11 font-regular black-v7">Prompt</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control font-12 font-medium black-v5 p-2 resize-none" placeholder="Leave a comment here" id="promptTextArea"></textarea>
+                                            
+                                        </div>
+                                        <button class="btn primary-btn font-14 font-medium text-nowrap mt-3" type="button" id="regenerateButton">Regenerate</button>
+                                    </div>
+                                    <!-- Enhanced Content container -->
+                                    <div class="my-4">
+                                        <p class="font-11 font-regular black-v7">Enhanced Content</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control font-12 font-medium black-v5 p-2 resize-none" style="height: 100px" placeholder="Leave a comment here" id="responseTextArea"></textarea>
+                                        </div>
+                                        <button class="btn primary-btn font-14 font-medium text-nowrap mt-3" type="button" id="replace">Replace</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end custom-border-top pt-3 ">
+                                    <button class="btn primary-btn font-14 font-medium text-nowrap" type="button" id="sendForApprovalButton">Send for approval</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        
+        <!-- Your script tags -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="taskpane.js"></script>
+    </body>
+
+</html>

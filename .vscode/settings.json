@@ -1,0 +1,12 @@
+{
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript"
+    ],
+    "appService.zipIgnorePattern": [
+      "node_modules{,/**}",
+      ".vscode{,/**}"
+    ]
+  }
+  

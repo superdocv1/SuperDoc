@@ -1,0 +1,18 @@
+.custom-nav{
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.custom-nav .nav-link{
+    color: #777BE6 !important;
+}
+
+.custom-nav .nav-link.active{
+    background-color: #f7f7ff;
+    font-weight: 600 !important;
+    padding:8px 17px;
+    border-radius: 4px;
+}
+
+.custom-nav .nav-link{
+    padding:8px 17px;
+}

@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'latomedium';
+    src: url('../fonts/lato-medium-webfont.eot');
+    src: url('../fonts/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-medium-webfont.woff2') format('woff2'),
+         url('../fonts/lato-medium-webfont.woff') format('woff'),
+         url('../fonts/lato-medium-webfont.svg#latomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'latosemibold';
+    src: url('../fonts/lato-semibold-webfont.eot');
+    src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-semibold-webfont.woff') format('woff'),
+         url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-regular{
+    font-family: 'latoregular' !important;
+}
+
+.font-medium{
+    font-family: 'latomedium' !important;
+}
+
+.font-semibold{
+    font-family: 'latosemibold' !important;
+}
+
+.font-bold{
+    font-family: 'latobold' !important;
+}
+
+body{
+    font-family: 'latoregular' !important;
+}
+.font-8{
+    font-size: 8px !important;
+}
+.font-10{
+    font-size: 10px !important;
+}
+.font-11{
+    font-size: 11px !important;
+}
+.font-12{
+    font-size: 12px !important;
+}
+.font-13{
+    font-size: 13px;
+}
+
+.font-14{
+    font-size:14px !important;
+}
+
+.font-16{
+    font-size:16px;
+}
+
+.font-18{
+    font-size:18px;
+}
+
+.font-20{
+    font-size:20px;
+}
+.font-22{
+    font-size:22px;
+}
+
+.primary-color{
+    color:#3d3d3d;
+}
+.color-black{
+    color:#000;
+}
+.black-v1{
+    color: #383737;
+}
+.black-v2{
+    color: #5d5d5d;
+}
+.black-v3{
+    color: #0C0C0C;
+}
+.black-v4{
+    color: #252525;
+}
+.black-v5{
+    color: #121010;
+}
+.balck-v6{
+    color: #344054;
+}
+.black-v7{
+    color: #2e2e2e;
+}
+.white-v1{
+    color: #ffffff;
+}
+
+.blue-bg{
+    background-color: #f4f4fb;
+}
+.primary-blue{
+    color: #7373FF;
+}
+.text-blue{
+    color: #009DF3;
+}
+.secondary-blue{
+    color: #5B5FC7;
+}
+.gray-v1{
+    color: #9d9d9d;
+}
+.gray-v2{
+    color: #828282;
+}
+.gray-v3{
+    color: #8a8a8a;
+}
+.gray-v3{
+    color: #909090;
+}
+.gray-v5{
+    color: #999999;
+}
+.bg-white{
+    background-color: #f7f7f7 !important;
+}
+.white-v2{
+    background-color: #f7f7f7 !important;
+}
+.primary-btn.btn{
+    background-color:#5B5FC7;
+    padding:8px 20px;
+    color:#fff !important;
+    height:40px;
+    border-radius: 6px;
+}
+.primary-btn.btn:hover{
+    background-color:#41437e;
+}
+
+.primary-btn.btn:disabled{
+    background-color:#adafe3;
+}
+.outline-btn{
+    background-color:transparent;
+    padding:8px 20px;
+    color:#5B5FC7 !important;
+    border: 1px solid #5B5FC7;
+    border-radius: 4px;
+    height:40px;
+}
+.outline-btn:hover{
+    background-color: #f7f7f7;
+}
+.outline-btn:disabled{
+    color: #9a9ded;
+    border: 1px solid #9a9ded;
+}
+.red-btn{
+    background-color: #FF7A7A;
+    border-radius: 6px;
+    color: #fff;
+    padding:8px 24px;
+    border: none;
+}
+.red-btn:hover{
+    background-color: #f95f5f;
+}
+.green-btn{
+    background-color: #66D178;
+    border-radius: 6px;
+    color: #fff;
+    padding:8px 24px;
+    border: none;
+}
+.green-btn:hover{
+    background-color: rgb(87, 239, 115);
+}
+.custom-border-right{
+    border-right: 1px solid #CFCFCF;
+}
+
+.primary-action-btn{
+    padding:7px 14px;
+    background: #5B5FC7;
+    border:0;
+    border-radius:8px;
+    
+}
+
+.primary-action-btn:hover{
+    background-color:#41437e;
+}
+.border-right-light{
+    border-right: 1px solid #ECECEC;
+}
+.popup-text-container{
+   
+    height: 300px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px 36px;
+}
+.lh-20{
+    line-height: 20px;
+}
+.exit-arrow{
+    width:23px;
+    height:16px;
+}
+
+.doc-file-icon{
+    width:20px;
+}
+
+.close-icon{
+    width:14px;
+}
+
+.upload-cloud-icon{
+    width:25px;
+}
+
+.rewrite-icon{
+    width:18px;
+}
+
+.delete-icon{
+    width:15px;
+}
+
+.tab-btn .icon-filter{
+    width:20px;
+}
+
+.w-8{
+    width:8px;
+}
+
+.w-9{
+    width:9px;
+}
+
+.w-10{
+    width:10px;
+}
+
+.w-11{
+    width:11px;
+}
+
+.w-12{
+    width:12px;
+}
+
+.w-13{
+    width:13px;
+}
+
+.w-14{
+    width:14px;
+}
+
+.w-15{
+    width:15px;
+}
+
+.w-16{
+    width:16px;
+}
+
+.w-17{
+    width:17px;
+}
+
+.w-18{
+    width:18px;
+}
+
+.w-19{
+    width:19px;
+}
+
+.w-20{
+    width:20px;
+}
+
+.w-21{
+    width:21px;
+}
+
+.w-22{
+    width:22px;
+}
+
+.w-23{
+    width:23px;
+}
+
+.w-24{
+    width:24px;
+}
+
+.w-25{
+    width:25px;
+}
+
+.w-26{
+    width:26px;
+}
+
+.w-27{
+    width:27px;
+}
+
+.w-28{
+    width:28px;
+}
+
+.w-29{
+    width:29px;
+}
+
+.w-30{
+    width:30px;
+}
+
+.w-36{
+    width:36px;
+}

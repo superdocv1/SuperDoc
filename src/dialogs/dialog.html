@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superdoc add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .content-container {
+            height: calc(100vh - 50px); /* Adjust based on your close button height */
+            width: 100%;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+      
+        #content {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <div class="content-container">
+        <h1 id="content"></h1>
+        <div id="topic"></div>
+    </div>
+
+    <script>
+        Office.onReady(() => {
+            // Get the content from the URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            const topic = urlParams.get('topic');
+            const content = urlParams.get('content')
+            
+            // Display the content
+            document.getElementById('content').innerHTML = decodeURIComponent(content);
+            document.getElementById('topic').innerHTML = decodeURIComponent(topic);
+
+            // Set up close button
+            document.getElementById('closeButton').onclick = () => {
+                Office.context.ui.messageParent('close');
+            };
+        });
+
+        // Set fixed size
+        window.onload = function() {
+            window.resizeTo(800, 600); // Increased size to 800x600
+            window.onresize = function() {
+                window.resizeTo(800, 600); // Maintain the size even if user tries to resize
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "super-doc": {
+      "appLocation": ".",
+      "outputLocation": ".",
+      "apiLocation": "./src/service",
+      "apiLanguage": "node",
+      "apiVersion": "18"
+    }
+  }
+}
+
