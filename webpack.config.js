@@ -5,8 +5,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { Dialog } = require("@fluentui/react");
 
-const urlDev = "https://superdoc-wordplugin.azurewebsites.net/";
-const urlProd = "https://superdoc-wordplugin.azurewebsites.net/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlDev = "https://delightful-sand-0d9dc2c0f.5.azurestaticapps.net/";
+const urlProd = "https://delightful-sand-0d9dc2c0f.5.azurestaticapps.net/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 async function getHttpsOptions() {
   const httpsOptions = await devCerts.getHttpsServerOptions();
